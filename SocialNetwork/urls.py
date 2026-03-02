@@ -21,6 +21,5 @@ from login.views import UserListView, LandingView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('user_list/', include('login.urls')),
-    path('', LandingView.as_view(), name='landing'),
+    path('', include('login.urls')),
 ]

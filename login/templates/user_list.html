@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User List</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-    </style>
-</head>
+{% extends 'base.html' %}
+
+{% block title %}ProgrammingDev - Posts{% endblock %}
+
+{% block content %}
 <body>
     <h1>Users:</h1>
     <ul>
@@ -19,3 +14,4 @@
     </ul>
 </body>
 </html>
+{% endblock %}
